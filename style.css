@@ -241,7 +241,13 @@ header {
   }
 }
 
-/* Section list (Home page) */
+.section-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
 .section-link {
   display: block;
   padding: 18px 16px;
@@ -262,25 +268,55 @@ header {
   text-align: center;
 
   box-shadow: var(--glow);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
 }
 
-.section-link:hover{
+
+/* Cyan shine travelling across the button */
+.section-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 70%;
+  height: 100%;
+  transform: skewX(-22deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.34),
+    transparent
+  );
+  transition: left 0.55s ease;
+}
+
+
+.section-link:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 229, 255, 0.14),
+    rgba(0, 229, 255, 0.04)
+  );
+
   box-shadow:
     0 0 16px rgba(0, 229, 255, 0.8),
     0 0 28px rgba(0, 229, 255, 0.45);
 
   text-decoration: none;
 }
+
+.section-link:hover::before {
+  left: 145%;
+}
+
 .section-link:active {
   transform: translateY(0);
 }
-
-.section-link:visited,
-.section-link:focus {
-  color: var(--glow);
-  text-decoration: none;
-}
-
 /* Generic section styling */
 section {
   padding: 70px 0;
