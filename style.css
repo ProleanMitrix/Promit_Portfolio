@@ -165,9 +165,45 @@ header {
 
 .hero-description {
   max-width: 650px;
-  color: var(--muted);
-  font-size: 0.98rem;
   margin: -10px 0 28px;
+
+  font-family: "Audiowide", monospace;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  letter-spacing: 0.035em;
+}
+
+.hero-description::before {
+  content: "SYSTEM PROFILE //";
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-size: 0.5rem;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+.hero-subdescription {
+  max-width: 650px;
+  margin: -10px 0 28px;
+  
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  letter-spacing: 0.035em;
+
+}
+
+.hero-subdescription::before {
+  content: "SYSTEM PROFILE //";
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-size: 0.5rem;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
 }
 
 .profile-visual {
@@ -569,6 +605,10 @@ footer {
   .hero-description {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-description::before {
+    font-size: 0.45rem;;
   }
 
   .section-list {
