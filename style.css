@@ -163,15 +163,6 @@ header {
   min-width: 0;
 }
 
-.terminal-line {
-  font-family: var(--font-mono);
-  color: var(--accent);
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  margin-bottom: 14px;
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.45);
-}
-
 .hero-description {
   max-width: 650px;
   color: var(--muted);
@@ -217,17 +208,6 @@ header {
   border: 5px solid #050507;
   filter: contrast(1.05) saturate(1.05);
   animation: counter-rotate-image 9s linear infinite;
-}
-
-.profile-status {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
 @keyframes rotate-ring {
