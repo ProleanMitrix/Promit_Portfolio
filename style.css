@@ -270,6 +270,12 @@ header {
   transform: translateY(0);
 }
 
+.section-link:visited,
+.section-link:focus {
+  color: var(--glow);
+  text-decoration: none;
+}
+
 /* Generic section styling */
 section {
   padding: 70px 0;
