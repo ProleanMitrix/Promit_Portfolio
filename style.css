@@ -174,11 +174,10 @@ header {
 }
 
 .hero-description::before {
-  content: "SYSTEM PROFILE //";
   display: block;
   margin-bottom: 12px;
 
-  font-family: "Press Start 2P", "Courier New", monospace;
+  font-family: "Press Start 2P", monospace;
   font-size: 0.5rem;
   line-height: 1.8;
   letter-spacing: 0.04em;
@@ -196,11 +195,9 @@ header {
 }
 
 .hero-subdescription::before {
-  content: "SYSTEM PROFILE //";
-  display: block;
   margin-bottom: 12px;
 
-  font-family: "Press Start 2P", "Courier New", monospace;
+  font-family: "Courier New", monospace;
   font-size: 0.5rem;
   line-height: 1.8;
   letter-spacing: 0.04em;
