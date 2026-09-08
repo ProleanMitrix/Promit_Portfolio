@@ -296,6 +296,7 @@ header {
 
 
 .section-link:hover {
+  transform: translateY (-5px);
   background: linear-gradient(
     180deg,
     rgba(0, 229, 255, 0.14),
