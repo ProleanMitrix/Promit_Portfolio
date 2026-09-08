@@ -262,10 +262,15 @@ header {
   text-align: center;
 
   box-shadow: var(--glow);
-  text-decoration: none;
 }
 
-.section-link:hover,
+.section-link:hover{
+  box-shadow:
+    0 0 16px rgba(0, 229, 255, 0.8),
+    0 0 28px rgba(0, 229, 255, 0.45);
+
+  text-decoration: none;
+}
 .section-link:active {
   transform: translateY(0);
 }
