@@ -320,9 +320,6 @@ header {
 }
 
 /* Generic section styling */
-section {
-  padding: 70px 0;
-}
 
 .section-title {
   font-family: var(--font-mono);
@@ -586,13 +583,6 @@ footer {
   height: min(240px, 64vw);
   aspect-ratio: 1 / 1;
 }
-}
-
-@media (max-width: 640px) {
-  .section-link {
-    padding: 20px 16px;
-    font-size: 1rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
