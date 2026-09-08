@@ -320,6 +320,9 @@ header {
 }
 
 /* Generic section styling */
+section {
+  padding: 70px 0;
+}
 
 .section-title {
   font-family: var(--font-mono);
